@@ -1,0 +1,11 @@
+###
+GET http://localhost:8080/dsPhongKhach
+
+###
+GET http://localhost:8080/dsPhongAn
+
+###
+GET http://localhost:8080/dsPhongNgu
+
+###
+GET http://localhost:8080/dsPhongLamViec

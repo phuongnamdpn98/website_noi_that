@@ -1,0 +1,37 @@
+[
+    {
+        "id":"user1",
+        "username":"pnam",
+        "pass":"nam123", 
+        "email":"phuongnamdpn98@gmail.com",
+        "Danh_sach_san_pham_da_mua":[]
+    },
+    {
+        "id":"user2",
+        "username":"alisa",
+        "pass":"alisa123", 
+        "email":"alisa123@gmail.com",
+        "Danh_sach_san_pham_da_mua":[]
+    },
+    {
+        "id":"user3",
+        "username":"nguoidung3",
+        "pass":"matkhau3", 
+        "email":"nguoidung3@gmail.com",
+        "Danh_sach_san_pham_da_mua":[]
+    },
+    {
+        "id":"user4",
+        "username":"nguoidung4",
+        "pass":"matkhau4", 
+        "email":"nguoidung4@gmail.com",
+        "Danh_sach_san_pham_da_mua":[]
+    },
+    {
+        "id":"user5",
+        "username":"nguoidung5",
+        "pass":"matkhau5", 
+        "email":"nguoidung5@gmail.com",
+        "Danh_sach_san_pham_da_mua":[]
+    }
+]

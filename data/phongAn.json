@@ -1,0 +1,242 @@
+[
+    {
+        "ma_so":"BAN_AN_1",
+        "ten":"Bàn ăn 6 chỗ Coastal",
+        "gia":11815000,
+        "mo_ta":"Bàn ăn Coastal được làm từ gỗ Ash, theo phong cách truyền thống và mang kết cấu vững chãi. Mặt bàn bằng phẳng với các đường vân tự nhiên, bốn cạnh được bo tròn mềm mại để tránh va chạm trong lúc sử dụng. Sản phẩm có 2 kích thước là 6 chỗ và 8 chỗ cho người dùng những lựa chọn linh hoạt, phù hợp với nhiều không gian và nhu cầu sử dụng.",
+        "chat_lieu":"Gỗ",
+        "Danh_sach_Phieu_Ban": [],
+        "nhom_sp":{
+            "ten":"BAN_AN",
+            "ma_so":"BAN_AN"
+        }
+    },
+    {
+        "ma_so":"BAN_AN_2",
+        "ten":"Bàn ăn 8 chỗ Coastal",
+        "gia":14025000,
+        "mo_ta":"Bàn ăn Coastal được làm từ gỗ, theo phong cách truyền thống mang kết cấu vững chãi. Mặt bàn bằng phẳng với các đường vân tự nhiên, bốn cạnh được bo tròn mềm mại để tránh va chạm trong lúc sử dụng. Sản phẩm có 2 kích thước là bàn ăn 6 chỗ và 8 chỗ cho người dùng những lựa chọn linh hoạt, phù hợp với nhiều không gian và nhu cầu sử dụng.",
+        "chat_lieu":"Gỗ",
+        "Danh_sach_Phieu_Ban": [],
+        "nhom_sp":{
+            "ten":"BAN_AN",
+            "ma_so":"BAN_AN"
+        }
+    },
+    {
+        "ma_so":"BAN_AN_3",
+        "ten":"Bàn ăn 8 chỗ Moretti",
+        "gia":50150000,
+        "mo_ta":"",
+        "chat_lieu":"Đá",
+        "Danh_sach_Phieu_Ban": [],
+        "nhom_sp":{
+            "ten":"BAN_AN",
+            "ma_so":"BAN_AN"
+        }
+    },
+    {
+        "ma_so":"BAN_AN_4",
+        "ten":"Bàn ăn 8 chỗ Tết",
+        "gia":14365000,
+        "mo_ta":"",
+        "chat_lieu":"Gỗ",
+        "Danh_sach_Phieu_Ban": [],
+        "nhom_sp":{
+            "ten":"BAN_AN",
+            "ma_so":"BAN_AN"
+        }
+    },
+    {
+        "ma_so":"BAN_AN_5",
+        "ten":"Bàn ăn Breeze mặt kính bronze/GM2",
+        "gia":176715000,
+        "mo_ta":"",
+        "chat_lieu":"Kim loại",
+        "Danh_sach_Phieu_Ban": [],
+        "nhom_sp":{
+            "ten":"BAN_AN",
+            "ma_so":"BAN_AN"
+        }
+    },
+    {
+        "ma_so":"BAN_AN_6",
+        "ten":"Bàn ăn Lucia",
+        "gia":74375000,
+        "mo_ta":"",
+        "chat_lieu":"Đá",
+        "Danh_sach_Phieu_Ban": [],
+        "nhom_sp":{
+            "ten":"BAN_AN",
+            "ma_so":"BAN_AN"
+        }
+    },
+    {
+        "ma_so":"BAN_AN_7",
+        "ten":"Bàn ăn mở rộng Apian ceramic trắng P2C",
+        "gia":250359000,
+        "mo_ta":"",
+        "chat_lieu":"Ceramic",
+        "Danh_sach_Phieu_Ban": [],
+        "nhom_sp":{
+            "ten":"BAN_AN",
+            "ma_so":"BAN_AN"
+        }
+    },
+    {
+        "ma_so":"BAN_AN_8",
+        "ten":"Bàn ăn Peak hiện đại mặt Ceramic vân mây",
+        "gia":38224500,
+        "mo_ta":"Bàn ăn Peak hiện đại với bề mặt Ceramic được nhập khẩu từ Ý. Mặt Ceramic có khả năng chịu nhiệt tốt với họa tiết vân mây tinh xảo tạo cảm giác vừa vững chắc, vừa uyển chuyển. Chân bàn được thiết kế theo hình tam giác với các góc cạnh bo tròn hiện đại cùng những đường nét uốn lượn mềm mại. Bàn ăn Peak với tông màu trắng trang nhã sẽ mang đến một không gian sống sang trọng và đẳng cấp.",
+        "chat_lieu":"Ceramic",
+        "Danh_sach_Phieu_Ban": [],
+        "nhom_sp":{
+            "ten":"BAN_AN",
+            "ma_so":"BAN_AN"
+        }
+    },
+    {
+        "ma_so":"GHE_AN_1",
+        "ten":"Ghế ăn Bolero ACC001 Da AB1142",
+        "gia":5024000,
+        "mo_ta":"",
+        "chat_lieu":"Da",
+        "Danh_sach_Phieu_Ban": [],
+        "nhom_sp":{
+            "ten":"GHE_AN",
+            "ma_so":"GHE_AN"
+        }
+    },
+    {
+        "ma_so":"GHE_AN_2",
+        "ten":"Ghế ăn Bolero ACC001 Da DAAB 1011",
+        "gia":5024000,
+        "mo_ta":"",
+        "chat_lieu":"Da",
+        "Danh_sach_Phieu_Ban": [],
+        "nhom_sp":{
+            "ten":"GHE_AN",
+            "ma_so":"GHE_AN"
+        }
+    },
+    {
+        "ma_so":"GHE_AN_3",
+        "ten":"Ghế ăn có tay Tết vải vact10499",
+        "gia":5015000,
+        "mo_ta":"",
+        "chat_lieu":"Vải",
+        "Danh_sach_Phieu_Ban": [],
+        "nhom_sp":{
+            "ten":"GHE_AN",
+            "ma_so":"GHE_AN"
+        }
+    },
+    {
+        "ma_so":"GHE_AN_4",
+        "ten":"Ghế ăn có tay Tết vải vact10504",
+        "gia":5015000,
+        "mo_ta":"",
+        "chat_lieu":"Vải",
+        "Danh_sach_Phieu_Ban": [],
+        "nhom_sp":{
+            "ten":"GHE_AN",
+            "ma_so":"GHE_AN"
+        }
+    },
+    {
+        "ma_so": "GHE_AN_5",
+        "ten": "Ghế ăn Coastal KD1085-18",
+        "gia": 4335000,
+        "mo_ta": "Coastal mang đậm chất Việt khi khéo léo dung hòa được những nét đẹp lấy cảm hứng từ miền duyên hải nước ta với các vật liệu cao cấp, lối thiết kế hiện đại. Ghế ăn Coastal với bốn chân gỗ chắc chắn, được bọc vải êm ái cùng thiết kế phù hợp với thể trạng người Việt. Tất cả những phần tiếp xúc với cơ thể đều mềm mại, thanh thoát. Ngôn ngữ thiết kế của Coastal kết hợp đường nét uyển chuyển và tự nhiên, chất vải xanh tươi mát mang màu sắc của biển cùng nét vững chãi, tông gỗ ấm áp tạo nên sự tương phản hài hòa tựa như biển rộng bí ẩn và đất liền thân thuộc.",
+        "chat_lieu": "Vải",
+        "Danh_sach_Phieu_Ban": [],
+        "nhom_sp": {
+            "ten": "GHE_AN",
+            "ma_so": "GHE_AN"
+        }
+    },
+    {
+        "ma_so": "GHE_AN_6",
+        "ten": "Ghế ăn Coastal vải VACT5805",
+        "gia": 4335000,
+        "mo_ta": "Coastal mang đậm chất Việt khi khéo léo dung hòa được những nét đẹp lấy cảm hứng từ miền duyên hải nước ta với các vật liệu cao cấp, lối thiết kế hiện đại. Ghế ăn Coastal với bốn chân gỗ chắc chắn, được bọc vải êm ái cùng thiết kế phù hợp với thể trạng người Việt. Tất cả những phần tiếp xúc với cơ thể đều mềm mại, thanh thoát. Ngôn ngữ thiết kế của Coastal kết hợp đường nét uyển chuyển và tự nhiên, chất vải xanh tươi mát mang màu sắc của biển cùng nét vững chãi, tông gỗ ấm áp tạo nên sự tương phản hài hòa tựa như biển rộng bí ẩn và đất liền thân thuộc.",
+        "chat_lieu": "Vải",
+        "Danh_sach_Phieu_Ban": [],
+        "nhom_sp": {
+            "ten": "GHE_AN",
+            "ma_so": "GHE_AN"
+        }
+    },
+    {
+        "ma_so": "GHE_AN_7",
+        "ten": "Ghế ăn Moretti vải VACT10635",
+        "gia": 5270000,
+        "mo_ta": "",
+        "chat_lieu": "Vải",
+        "Danh_sach_Phieu_Ban": [],
+        "nhom_sp": {
+            "ten": "GHE_AN",
+            "ma_so": "GHE_AN"
+        }
+    },
+    {
+        "ma_so": "GHE_AN_8",
+        "ten": "Ghế ăn Peak vải cam",
+        "gia": 4097000,
+        "mo_ta": "Ghế ăn Peak là tâm điểm nội thất đáng chú ý bởi nó bao phủ xung quanh bằng lớp vải mang sắc cam rực rỡ, nổi bật. Chân ghế sử dụng sắt sơn tĩnh điện màu đen sang trọng được xem là sự kết hợp hoàn hảo của thiết kế nắm bắt xu hướng, sở thích giới trẻ hiện nay.",
+        "chat_lieu": "Vải",
+        "Danh_sach_Phieu_Ban": [],
+        "nhom_sp": {
+            "ten": "GHE_AN",
+            "ma_so": "GHE_AN"
+        }
+    },
+    {
+        "ma_so": "GHE_AN_9",
+        "ten": "Ghế ăn Peak vải xanh",
+        "gia": 4097000,
+        "mo_ta": "Ghế ăn Peak là tâm điểm nội thất đáng chú ý bởi nó bao phủ xung quanh bằng lớp vải mang sắc xanh dương rực rỡ, nổi bật. Chân ghế sử dụng sắt sơn tĩnh điện màu đen thời thượng được xem là sự kết hợp hoàn hảo, một thiết kế nắm bắt xu hướng hiện nay.",
+        "chat_lieu": "Vải",
+        "Danh_sach_Phieu_Ban": [],
+        "nhom_sp": {
+            "ten": "GHE_AN",
+            "ma_so": "GHE_AN"
+        }
+    },
+    {
+        "ma_so": "GHE_AN_10",
+        "ten": "Ghế ăn Rusty 80981K",
+        "gia": 10136000,
+        "mo_ta": "",
+        "chat_lieu": "Da",
+        "Danh_sach_Phieu_Ban": [],
+        "nhom_sp": {
+            "ten": "GHE_AN",
+            "ma_so": "GHE_AN"
+        }
+    },
+    {
+        "ma_so": "GHE_AN_11",
+        "ten": "Ghế ăn xoay Albert Kuip Taupe 110502Z",
+        "gia": 10920000,
+        "mo_ta": "",
+        "chat_lieu": "Vải",
+        "Danh_sach_Phieu_Ban": [],
+        "nhom_sp": {
+            "ten": "GHE_AN",
+            "ma_so": "GHE_AN"
+        }
+    },
+    {
+        "ma_so": "GHE_AN_12",
+        "ten": "Ghế Bar Bridge màu nâu Da Cognac",
+        "gia": 25457500,
+        "mo_ta": "",
+        "chat_lieu": "Gỗ",
+        "Danh_sach_Phieu_Ban": [],
+        "nhom_sp": {
+            "ten": "GHE_AN",
+            "ma_so": "GHE_AN"
+        }
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "id":"admin1",
+        "username":"admin",
+        "pass":"admin", 
+        "email":"admin@gmail.com"
+    },
+    {
+        "id":"admin2",
+        "username":"pnam",
+        "pass":"nam123", 
+        "email":"phuongnamdpn98@gmail.com"
+    }
+]
