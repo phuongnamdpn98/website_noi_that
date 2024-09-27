@@ -1,0 +1,99 @@
+<div class="container-fluid img-banner-shop">
+    <!-- <img src="./images/banner-shop.png" class="img-banner-shop"> -->
+
+</div>
+
+<div class="container">
+    <div class="row mt-5 boxSearch">
+        <div class="col d-flex mt-5">
+            <input type="text" name="search" id="search" placeholder="Tìm kiếm sản phẩm" ng-model="keyword"
+                ng-model-options="{debounce:1000}">
+            <button class="btn btn-outline-dark btnSearch ms-3">
+                Tìm kiếm
+            </button>
+        </div>
+
+    </div>
+    <div class="row mt-3">
+        <div class="col-md-4">
+            <label for="price" class="form-label"><strong>Giá</strong></label>
+            <select class="form-select" aria-label="Default select example" ng-model="order">
+                <option value="">Chọn theo giá</option>
+                <option value="gia" ><button ng-click="order='gia'">Theo giá: Từ thấp đến cao</button></option>
+                <option value="-gia"><button ng-click="order='-gia'">Theo giá: Từ cao đến thấp</button></option>
+            </select>
+
+        </div>
+        <div class="col-md-4">
+            <label for="chatLieu" class="form-label"><strong>Chất liệu</strong></label>
+            <select class="form-select" aria-label="Default select example" ng-model="selectedMaterial">
+                <option value="" selected>Tất cả</option>
+                <option value="Ceramic">Ceramic</option>
+                <option value="Đá">Đá</option>
+                <option value="Da">Da</option>
+                <option value="Gỗ">Gỗ</option>
+                <option value="vải">vải</option>
+                <option value="Kim Loại">Kim Loại</option>
+            </select>
+
+        </div>
+        <div class="col-md-4 d-flex align-items-center">
+            <a class="btn btn-outline-dark" style="width: 350px; margin-top: 25px;">Áp dụng</a>
+        </div>
+    </div>
+
+    <div
+        class="row mt-5 gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center wow animate__animated animate__fadeInRight">
+        <div class="col mb-5" ng-repeat="sp in dssp | filter : keyword: ten: chat_lieu: selectedMaterial | orderBy : order | limitTo: limit: start">
+            <div class="card h-100">
+                <img class="card-img-top" src="{{Dia_chi_Dich_vu_img}}/{{sp.ma_so}}.jpg" alt="..." />
+                <div class="card-body p-4">
+                    <div class="text-center">
+                        <h5 class="fw-bolder">{{sp.ten}}</h5>
+                        <p>{{sp.gia | number:0}} đ</p>
+                        
+                    </div>
+                </div>
+
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                    <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                            href="#!productDetail/{{sp.ma_so}}">Xem Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="col mb-5">
+            <div class="card h-100">
+                <img class="card-img-top" src="./images/BAN-LAM-VIEC-WING-MAU-TRANG-600x400.jpg" alt="..." />
+                <div class="card-body p-4">
+                    <div class="text-center">
+                        <h5 class="fw-bolder">Bàn làm việc Wing màu trắng</h5>
+                        14,630,000 đ
+                    </div>
+                </div>
+
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Thêm vào giỏ
+                            hàng</a>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+
+    </div>
+    <div class="container">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item"><button ng-click="changePage(1)" class="page-link">Previous</button></li>
+                <li class="page-item " ng-repeat="trang in pagelist">
+                    <button ng-click="changePage(trang)" class="page-link {{(page == trang)?'active':''}}"
+                        >{{trang}}</button>
+                </li>
+
+                <li class="page-item {{(page == total)?'disable':''}}">
+                    <button ng-click="changePage(page+1)" class="page-link">Next</button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>

@@ -1,0 +1,216 @@
+
+<div id="carouselExample" class="carousel slide mb-4">
+    <div class="carousel-inner" data-bs-ride="carousel">
+        <div class="carousel-item active">
+            <div class="videoban">
+                <video class="d-block w-100" src="./videos/ban1.mp4" autoplay loop muted>
+                </video>
+            </div>
+        </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<div class="container">
+    <div class="row d-flex wow animate__animated animate__backInUp" >
+        <div class="col-xl-3 col-12 col-sm-6 p-1 d-flex">
+            <div class="card card-catalogue d-flex text-bg-dark align-items-start">
+                <img class="card-catalogue-img rounded " src="./images/livingroomBan.png" alt="">
+                <div class="card-img-overlay info">
+
+                    <h3><span class="btn btn-outline-secondary fs-3"><i
+                                class="fa-solid fa-arrow-right-long"></i></span>Phòng khách</h3>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="col-xl-3 col-12 col-sm-6 p-1 d-flex">
+            <div class="card card-catalogue d-flex text-bg-dark align-items-start">
+                <img class="card-catalogue-img rounded " src="./images/kitchenroomBan.png" alt="">
+                <div class="card-img-overlay info">
+
+                    <h3><span class="btn btn-outline-secondary fs-3"><i
+                                class="fa-solid fa-arrow-right-long"></i></span>Nhà bếp</h3>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="col-xl-3 col-12 col-sm-6 p-1 d-flex">
+            <div class="card card-catalogue d-flex text-bg-dark align-items-start">
+                <img class="card-catalogue-img rounded " src="./images/posterOffice.png" alt="">
+                <div class="card-img-overlay info">
+
+                    <h3><span class="btn btn-outline-secondary fs-3"><i
+                                class="fa-solid fa-arrow-right-long"></i></span>Phòng làm việc</h3>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="col-xl-3 col-12 col-sm-6 p-1 d-flex">
+            <div class="card card-catalogue d-flex text-bg-dark align-items-start">
+                <img class="card-catalogue-img rounded " src="./images/posterBedroom.png" alt="">
+                <div class="card-img-overlay info">
+
+                    <h3><span class="btn btn-outline-secondary fs-3"><i
+                                class="fa-solid fa-arrow-right-long"></i></span>Phòng ngủ</h3>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h3 class="text-center" style="margin-top: 50px;">SẢN PHẨM NỔI BẬT</h3>
+    <div class="row wow animate__animated animate__fadeInLeft" style="margin-top: 50px;" data-wow-delay="0.6s">
+        <div class="col-lg-3 col-md-4 col-sm-6 py-2 py-md-0" ng-repeat="sp in dsPhongKhach | limitTo:8:0">
+            <div class="card" style="width: 17rem; margin: 10px;">
+                <img src="{{Dia_chi_Dich_vu_img}}/{{sp.ma_so}}.jpg" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h3 class="card-title text-center">{{sp.ten}}</h3>
+                    <p class="card-text text-center">{{sp.gia | number:0}} đ</p>
+                    <div class="text-center" id="btn3"><button><a href="#!productDetail/{{sp.ma_so}}"
+                                style="text-decoration: none; color:black">XEM THÊM</a></button></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="col-lg-3 col-md-4 col-sm-6 py-3 py-md-0">
+            <div class="card" style="width: 17rem; margin: 10px;">
+                <img src="./images/Ban-lam-viec-Coastal-600x400.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title text-center">Bàn làm việc Coastal</h3>
+                    <p class="card-text text-center">14,900,000 đ</p>
+                    <div class="text-center" id="btn3"><button><a href="./product_detail.html"
+                                style="text-decoration: none; color:black">XEM THÊM</a></button></div>
+                </div>
+            </div>
+        </div> -->
+
+        
+    </div>
+</div>
+
+<div class="container">
+    <h3 class="text-center" style="margin-top: 50px;">GÓC CẢM HỨNG</h3>
+    <div id="carouselExampleIndicators" class="carousel carousel-dark slide wow animate__animated animate__fadeInRight" data-wow-delay="0.6s"
+        style="margin-top: 50px;">
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                        <div class="card mb-3">
+                            <img style="height: 400px;" src="./images/khong-gian-mat-diu-mua-he-7-1200x800.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Không gian mát dịu cho mùa hè</h4>
+                                <p class="card-text">Chiếc sofa Bolero vải xanh êm ái là một lựa chọn tinh tế cho
+                                    mùa hè nóng này. Một chiếc [...]</p>
+                                <button class="btn btn-outline-dark"><a href="./blog-detail.html"
+                                        style="text-decoration: none; color:black">XEM THÊM</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card mb-3">
+                            <img style="height: 400px;" src="./images/phong-khach-hien-dai-tre-trung-1175x800.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Nhà đẹp cùng MOON</h4>
+                                <p class="card-text">Khám phá các không gian nhà đẹp với đa dạng nội thất cùng Nhà
+                                    Xinh [...]</p>
+                                <button class="btn btn-outline-dark"><a href="./blog-detail.html"
+                                        style="text-decoration: none; color:black">XEM THÊM</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                        <div class="card mb-3">
+                            <img style="height: 400px;" src="./images/phong-khach-mua-he-2.jpg" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Không gian xanh – Ý tưởng cho mùa hè tươi mát</h4>
+                                <p class="card-text">Chuẩn bị một không gian xanh mát cho căn nhà là cách giải nhiệt
+                                    hiệu quả cho mùa hè này. [...]</p>
+                                <button class="btn btn-outline-dark"><a href="./blog-detail.html"
+                                        style="text-decoration: none; color:black">XEM THÊM</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card mb-3">
+                            <img style="height: 400px;" src="./images/nha-xinh-ghe-thu-gian-lazboy-banner-2-4-24.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Thư giãn mỗi ngày với ghế thư giãn Lazboy</h4>
+                                <p class="card-text">Xoa dịu những mỏi mệt, vỗ về giúp ngủ ngon, đó là những gì
+                                    chiếc ghế thư giãn Lazboy mang [...]</p>
+                                <button class="btn btn-outline-dark"><a href="./blog-detail.html"
+                                        style="text-decoration: none; color:black">XEM THÊM</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                        <div class="card mb-3">
+                            <img style="height: 400px;" src="./images/sofa-jadora-3-1248x800.jpg" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Sofa Jadora – Êm ái tựa chiếc giường ngủ thân quen</h4>
+                                <p class="card-text">Sofa Jadora không chỉ là một món nội thất đẹp mà còn có thể
+                                    được tận dụng như một chiếc [...]</p>
+                                <button class="btn btn-outline-dark"><a href="./blog-detail.html"
+                                        style="text-decoration: none; color:black">XEM THÊM</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card mb-3">
+                            <img style="height: 400px;" src="./images/he-thong-tu-sach-hien-dai.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Không gian đọc sách thư giãn</h4>
+                                <p class="card-text">Sắp xếp không gian đọc sách riêng biệt tạo cảm hứng cho hoạt
+                                    động đọc sách sẽ giúp duy trì [...]</p>
+                                <button class="btn btn-outline-dark"><a href="./blog-detail.html"
+                                        style="text-decoration: none; color:black">XEM THÊM</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+

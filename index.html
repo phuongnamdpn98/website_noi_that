@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./js/alertify.js-0.3.11/themes/alertify.bootstrap.css">
+    <link rel="stylesheet" href="./js/alertify.js-0.3.11/themes/alertify.core.css">
+    <link rel="stylesheet" href="./js/alertify.js-0.3.11/themes/alertify.default.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body ng-app="myapp">
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand me-auto" href="#!"><img class="imgLogo" src="./images/logo.png"></a>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><a class="navbar-brand me-auto"
+                                href="#!"><img class="imgLogo" src="./images/logo.png"></a>
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2 active" aria-current="page" href="#!">Trang chủ</a>
+                            </li>
+                            <li class="nav-item dropdown mx-lg-2">
+                                <a class="nav-link dropdown-toggle" href="#!products" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Sản phẩm
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#!products/phongKhach">Phòng khách</a></li>
+                                    <li><a class="dropdown-item" href="#!products/phongAn">Phòng ăn</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#!products/phongNgu">Phòng ngủ</a></li>
+                                    <li><a class="dropdown-item" href="#!products/phongLamViec">Phòng làm việc</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="#!blog">Tin Tức</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="#!introduce">Giới Thiệu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="#!contact">liên Hệ</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <a href="#!shoppingCart" class="cart-icon-button position-relative"><i
+                        class="fa-solid fa-cart-shopping">
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-bg-light badge-cart">
+                            {{soLuongSPCarts}}
+                        </span>
+                    </i></a>
+                <a href="#!login" class="login-button"><i class="fa-solid fa-user"></i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <div ng-controller="myctrl">
+        <ng-view></ng-view>
+    </div>
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 text-white">
+                        MOON Company
+                    </h5>
+                    <p>MOON chính là sáng tạo nội thất thành phong cách riêng, phù hợp với nhu cầu khách hàng. Không
+                        chỉ là sản phẩm nội thất đơn thuần, mà còn là không gian sống theo phong cách riêng với cách bày
+                        trí hài hòa từ đồ nội thất kết hợp với đồ trang trí. Giúp khách hàng cảm nhận được một không
+                        gian sống thực sự, cảm thấy thoải mái để tận hưởng cuộc sống.</p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 text-white">Sản Phẩm</h5>
+                    <p>
+                        <a href="#!products/phongKhach" class="text-white" style="text-decoration: none;">Phòng
+                            khách</a>
+                    </p>
+                    <p>
+                        <a href="#!products/phongNgu" class="text-white" style="text-decoration: none;">Phòng ngủ</a>
+                    </p>
+                    <p>
+                        <a href="#!products/PhongAn" class="text-white" style="text-decoration: none;">Phòng ăn</a>
+                    </p>
+                    <p>
+                        <a href="#!products/phongLamViec" class="text-white" style="text-decoration: none;">Phòng làm
+                            việc</a>
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 text-white">Hữu ích</h5>
+                    <p>
+                        <a href="#!introduce" class="text-white" style="text-decoration: none;">Giới thiệu</a>
+                    </p>
+                    <p>
+                        <a href="#!login" class="text-white" style="text-decoration: none;">Đặng nhập</a>
+                    </p>
+                    <p>
+                        <a href="#!resgister" class="text-white" style="text-decoration: none;">Đăng ký</a>
+                    </p>
+                    <p>
+                        <a href="#!blog" class="text-white" style="text-decoration: none;">Góc cảm hứng</a>
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 text-white">Liên hệ</h5>
+                    <p>
+                        <i class="fa-solid fa-house"></i> 107 - 109 Võ Nguyên Giáp (Xa Lộ Hà Nội cũ), Phường Thảo Điền,
+                        Quận 2, Thành phố Hồ Chí Minh (Gần Masteri Thảo Điền)
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-envelope"></i> moonnoithat@gmail.com
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-phone"></i> +84 028-5413-6657
+                    </p>
+
+                </div>
+
+                <hr class="mb-4">
+
+                <div class="row align-items-center">
+                    <div class="col-md-7 col-lg-8">
+                        <p> Copyright @2024 Được thiết kế bởi:
+                            <a href="#!" style="text-decoration: none;">
+                                <strong class="text-white">Phương Nam</strong>
+                            </a>
+                        </p>
+
+                    </div>
+
+                    <div class="col-md-5 col-lg-4">
+                        <div class="text-center text-md-end">
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item">
+                                    <a href="#" class="btn-sm text-white fs-4">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="btn-sm text-white fs-4">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="btn-sm text-white fs-4">
+                                        <i class="fa-brands fa-tiktok"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="btn-sm text-white fs-4">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/angular.min.js"></script>
+    <script src="./js/angular-route.min.js"></script>
+    <script src="./js/angular-sanitize.min.js"></script>
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/api.js"></script>
+    <script src="./js/ckeditor/ckeditor.js"></script>
+    <script src="https://kit.fontawesome.com/861c2e6e2c.js" crossorigin="anonymous"></script>
+    <script src="./js/alertify.js-0.3.11/lib/alertify.min.js"></script>
+    <script src="./js/WOW-master/dist/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <script src="./js/app.js"></script>
+    <script>
+        if (localStorage.getItem("carts") != undefined) {
+
+            $rootScope.cart = JSON.parse(localStorage.getItem("carts"));
+            $rootScope.soLuongSPCarts = $rootScope.cart.length;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<section class="py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="{{Dia_chi_Dich_vu_img}}/{{spDetail.ma_so}}.jpg"
+                    alt="..." /></div>
+            <div class="col-md-6">
+                <h1 class="display-5 fw-bolder">{{spDetail.ten}}</h1>
+                <div class="fs-5 mb-5">
+                    Chất liệu: <span>{{spDetail.chat_lieu}}</span>
+                </div>
+                <div class="fs-5 mb-5">
+                    Giá tiền: <span>{{spDetail.gia | number:0}} đ</span>
+                </div>
+                <p class="lead">{{spDetail.mo_ta}}</p>
+                <div class="d-flex">
+
+                    <div class="d-flex mb-4" style="max-width: 300px">
+                        <button data-mdb-button-init data-mdb-ripple-init
+                            class="btn btn-outline-dark px-3 me-2 btn-qty-detail"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                            <i class="fas fa-minus"></i>
+                        </button>
+
+                        <div data-mdb-input-init class="form-outline">
+                            <input class="form-control text-center" id="quantityDetail" type="number" min="0" value="1"
+                                style="max-width: 3rem" class="form-control" name="quantity"/>
+                        </div>
+
+                        <button data-mdb-button-init data-mdb-ripple-init
+                            class="btn btn-outline-dark px-3 ms-2 btn-qty-detail"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <button class="btn btn-outline-dark flex-shrink-0 ms-2" type="button" ng-click="addToCart(spDetail)">
+                        <i class="bi-cart-fill me-1"></i>
+                        Thêm vào giỏ hàng
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-5 bg-light">
+    <div class="container px-4 px-lg-5 mt-5">
+        <h2 class="fw-bolder mb-4 d-flex justify-content-center">Sản phẩm Khác</h2>
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div class="col mb-5" ng-repeat="spRan in dsspRandom | limitTo:4:beginDetail">
+                <div class="card h-100">
+                    <img class="card-img-top" src="{{Dia_chi_Dich_vu_img}}/{{spRan.ma_so}}.jpg"
+                        alt="..." />
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <h5 class="fw-bolder">{{spRan.ten}}</h5>
+                            {{spRan.gia | number:0}} đ
+                        </div>
+                    </div>
+
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#!productDetail/{{spRan.ma_so}}">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col mb-5">
+                <div class="card h-100">
+                    <img class="card-img-top" src="./images/BAN-LAM-VIEC-WING-MAU-TRANG-600x400.jpg" alt="..." />
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <h5 class="fw-bolder">Bàn làm việc Wing màu trắng</h5>
+                            14,630,000 đ
+                        </div>
+                    </div>
+
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Thêm vào giỏ
+                                hàng</a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            
+        </div>
+    </div>
+</section>

@@ -1,0 +1,43 @@
+<div class="wrapper">
+    <div class="container main">
+        <div class="row row-login">
+            <div class="col-md-6 side-image">
+                <img class="imgLeft" src="./images/logo-cutout.png">
+
+            </div>
+
+            <div class="col-md-6 right">
+                <form name="frmDangNhap">
+                    <div class="input-box">
+                        <h3>Đăng nhập tài khoản</h3>
+                        <div class="input-field">
+                            <input type="text" class="input" name="username" id="username" 
+                            ng-model="user" required>
+                            <label for="username">Username</label>
+                        </div>
+                        <div class="alert alert-danger" ng-show="frmDangNhap.username.$invalid">
+                            Vui lòng điền username
+                          </div>
+                        <div class="input-field">
+                            <input type="password" class="input" 
+                            name="password" id="password"
+                            ng-model="pass" required>
+                            <label for="password">Password</label>
+                        </div>
+                        <div class="alert alert-danger" ng-show="frmDangNhap.password.$invalid">
+                            Vui lòng điền Password
+                          </div>
+                        <div class="input-field">
+                            <button class="submit btn btn-outline-dark" type="button"
+                            ng-click="dang_nhap()">Đăng nhập</button>
+                        </div>
+                        <!-- <div class="signup">
+                            <span>Đã có tài khoản chưa? <a href="#">Đặng ký ở đây</a></span>
+                        </div> -->
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+</div>

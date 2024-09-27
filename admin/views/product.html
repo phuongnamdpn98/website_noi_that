@@ -1,0 +1,41 @@
+<div class="card">
+    <div class="card-header">
+        <h3 class="text-uppercase">danh sách hàng hóa</h3>
+    </div>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col" class="text-uppercase btn-orderby text-primary">hình ảnh</th>
+                <th scope="col" class="text-uppercase btn-orderby text-primary" ng-click="order='name'">tên</th>
+                <th scope="col" class="text-uppercase btn-orderby text-primary" ng-click="order='price'">giá</th>
+                <th scope="col" class="text-uppercase btn-orderby text-primary">Xóa</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="sp in dssp | orderBy: order | limitTo:limit:start">
+                <td><img src="{{Dia_chi_Dich_vu_img}}/{{sp.ma_so}}.jpg" style="width: 70px; height: 70px;" /></td>
+                <td>{{sp.ten }}</td>
+                <td>{{sp.gia | number : 0}}</td>
+                <td ng-click="">X</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+    <div class="container">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item"><button ng-click="changePage(1)" class="page-link">Previous</button></li>
+                <li class="page-item " ng-repeat="trang in pagelist">
+                    <button ng-click="changePage(trang)"
+                        class="page-link {{(page == trang)?'active':''}}">{{trang}}</button>
+                </li>
+
+                <li class="page-item {{(page == total)?'disable':''}}">
+                    <button ng-click="changePage(page+1)" class="page-link">Next</button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>

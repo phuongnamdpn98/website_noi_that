@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary ban-post">
+        <div class="col-lg-6 px-0">
+            <h1 class="display-4 fst-italic text-white">Không gian xanh – Ý tưởng cho mùa hè tươi mát</h1>
+            <p class="lead my-3 text-white">Chuẩn bị một không gian xanh mát cho căn nhà là cách giải nhiệt
+                hiệu quả cho mùa hè này. [...]</p>
+            <p class="lead mb-0"><a href="#" class="text-white fw-bold icon-link-hover continue-blog ">Đọc tiếp...
+                    <i class="fa-solid fa-greater-than bi text-white"></i>
+                </a></p>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-md-6" ng-repeat="blog in dsBlog">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <h3 class="mb-0">{{blog.tieu_de}}</h3>
+                    <p class="card-text mb-auto">{{blog.mo_ta}} [...]</p>
+                    <a href="#!blogDetail/{{blog.ma_so_bai_viet}}" class="icon-link gap-1 icon-link-hover stretched-link continue-blog text-dark">
+                        Đọc tiếp
+                        <i class="fa-solid fa-greater-than bi"></i>
+                    </a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                    <img src="{{Dia_chi_Dich_vu_img}}/{{blog.thumbnail}}.jpg" width="300" height="250" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <h3 class="mb-0">Nhà đẹp cùng Nhà Xinh</h3>
+                    <p class="mb-auto">Khám phá các không gian nhà đẹp với đa dạng nội thất cùng Nhà
+                        Xinh [...]</p>
+                    <a href="#" class="icon-link gap-1 icon-link-hover stretched-link continue-blog text-dark">
+                        Đọc tiếp
+                        <i class="fa-solid fa-greater-than bi"></i>
+                    </a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                    <img src="./images/phong-khach-hien-dai-tre-trung-1175x800.jpg" width="300" height="250" alt="">
+                </div>
+            </div>
+        </div> -->
+        
+    </div>
+</div>
